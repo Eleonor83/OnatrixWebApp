@@ -1,0 +1,37 @@
+@import "./mixins/mixins";
+
+@import "./misc/base";
+@import "./components/typography";
+
+
+//index
+@import "./components/wrapper";
+@import "./components/container";
+@import "./components/links";
+@import "./components/buttons";
+@import "./components/typography";
+@import "./sections/header";
+@import "./sections/footer";
+@import "./sections/hero";
+@import "./sections/main-about";
+@import "./sections/our-services";
+@import "./sections/whychooseus";
+@import "./sections/success-story";
+@import "./sections/recentprojects";
+@import "./sections/mainbrands";
+
+// about
+
+@import "./sections/breadcrumb-section";
+@import "./sections/about-section-about";
+@import "./sections/about_testimonial";
+@import "./sections/about-our-team";
+@import "./sections/about-contactinfo";
+
+//services
+@import "./sections/section-services-details";
+
+//projects
+@import "./sections/section-projects";
+
+

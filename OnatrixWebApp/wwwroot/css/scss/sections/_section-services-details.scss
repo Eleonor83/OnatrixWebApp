@@ -1,0 +1,160 @@
+.section-services-details {
+
+    .container-services-details {
+      display: flex;
+      flex-direction: row;
+      margin-top: 100px;
+  
+      .s-d-content-left {
+        padding-right: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .s-d-content-header {
+            width: 100%; 
+            
+            h4, img, p {
+              width: 100%; 
+              text-align: left;
+            }
+    
+            img {
+              display: block; 
+              max-width: 100%; 
+              margin: 10px 0; 
+            }
+    
+            p {
+              margin-top: 15px; 
+              color: #6c757d; 
+            }
+          }
+
+        .s-d-content-form {
+          color: white;
+          background-color: #4f5955;
+          padding: 15px;
+          border-radius: 5px;
+          width: 100%;
+  
+          h5 {
+            color: #f2eddc;
+          }
+  
+          .form-group {
+            position: relative; 
+            display: flex;
+            align-items: center;
+  
+            .form-control {
+              width: 100%;
+              padding-right: 40px;
+              border-radius: 5px;
+              border: 1px solid #ccc;
+              box-sizing: border-box;
+            }
+  
+            .btn {
+              position: absolute;
+              right: 0;
+              top: 0;
+              height: 100%;
+              background-color: transparent;
+              border: none;
+              padding: 0 15px;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+  
+              i {
+                font-size: 20px;
+                color: #f2eddc;
+              }
+  
+              &:hover i {
+                color: #b8a493;
+              }
+            }
+          }
+        }
+      }
+  
+      .s-d-content-right {
+        padding-left: 20px;
+  
+        .s-d-content-right-div-top {
+          .s-d-right-div-content {
+            display: flex;
+  
+            i {
+              margin-right: 10px;
+              margin-top: 6px;
+              color: #d9c3a9;
+            }
+          }
+        }
+      }
+    }
+
+.s-d-form-container {
+    width: 100%;
+
+    .service-details-form {
+        width: 100%; 
+        padding: 20px;
+        box-sizing: border-box; 
+
+        h2 {
+            width: 100%;
+            margin-bottom: 20px;
+            text-align: left; 
+        }
+
+        form {
+            width: 100%; 
+
+            .form-group {
+                width: 100%; 
+                margin-bottom: 15px;
+
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                }
+
+                input,
+                textarea {
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                }
+
+                textarea {
+                    resize: vertical; 
+                    min-height: 120px; 
+                }
+            }
+
+            button {
+                width: 20%; 
+                padding: 10px;
+                background-color: #4F5955; 
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                text-align: center;
+
+                &:hover {
+                    background-color: #b8a493;
+                }
+            }
+        }
+    }
+}
+  }
+  

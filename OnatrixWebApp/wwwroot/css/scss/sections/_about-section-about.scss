@@ -1,0 +1,28 @@
+.about-section-about{
+
+    .container-about-about {
+        display: flex;
+        padding: 100px;
+        align-items: center;
+        justify-content: center;
+
+        .about-div-image {
+           padding-right: 40px;
+
+           h5 {
+            margin-top: 10px;
+            font-style: italic;
+            font-weight: 400; 
+           }
+        }
+
+        .about-div-text{
+
+            h4{
+                font-style: italic;
+                font-weight: 300;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

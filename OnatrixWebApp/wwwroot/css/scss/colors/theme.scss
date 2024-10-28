@@ -1,0 +1,45 @@
+.header-top-row {
+    background-color: #4F5955;
+    color: white;
+}
+
+.nav-link {
+    color: #4F5955;
+    font-weight: bold;
+
+    &:hover {
+        color:#D9C3A9 ;
+    }
+}
+
+.d-flex .social-icon  {
+    color: white;
+    margin-left: 10px;
+    background-color: #4F5955;
+    //border-right: 3px solid rgba(19, 221, 140, 0.2);
+
+    :hover {
+        color: white;
+        background-color: #1e2321;
+    }
+}
+
+footer {
+    background-color: black ;
+    color: #535656;
+
+    span {
+        color:#D9C3A9;
+    }
+}
+
+.btn-primary {
+    background-color: #4F5955;
+    color: #F2EDDC;
+}
+.button-secondary{
+    background-color: #F2EDDC;
+    color: #4F5955;
+    font-weight: bold;
+}
+

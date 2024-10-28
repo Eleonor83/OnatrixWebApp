@@ -1,0 +1,125 @@
+.section-projects{
+
+    .container-projects-details{
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        .projects{
+
+            .projects-post{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 50px;
+                margin-right: 50px;
+                border-bottom: 2px solid #ECECEC;
+
+                img{
+                    width: 370px;
+                    height: 200px;
+                    object-fit: cover; 
+                    margin-bottom: 20px;
+                }
+
+                .p-post-content{
+                    margin-left: 20px;
+                    margin-right: 80px;
+
+                    .projects-h6-calendar{
+                        font-weight: 400;
+                        color: #9C9EA6;
+                        
+                        i{
+                            margin-right: 5px;
+                            font-weight: 300;
+                        }
+                    }
+    
+                    a{
+                        color: #535656;
+                        .projects-h6-readmore{
+                            i{
+                                margin-left: 10px;
+                                color: #D9C3A9;
+                            }
+                        }                            
+                    }
+                }    
+            }
+        }
+
+        .section-projects-right{
+            .section-projects-tags{
+                width: 70%;
+                justify-content: center;
+                align-items: center;
+    
+                .btn {
+                    align-items: center;
+                    justify-content: center;
+                    border: 2px solid #ECECEC;
+                    border-radius: 20px;
+                    margin: 8px;
+                }
+            }
+        }
+
+        .s-d-form-container {
+
+            .service-details-form {
+                padding: 20px;
+                box-sizing: border-box; 
+                background-color:  rgb(20, 54, 20);
+        
+                h2 {
+                    width: 100%;
+                    color: #D9C3A9;
+                    margin-bottom: 20px;
+                    text-align: left; 
+                }
+        
+                form {
+                    width: 100%; 
+        
+                    .form-group {
+                        width: 100%; 
+                        margin-bottom: 15px;
+        
+                        label {
+                            display: block;
+                            margin-bottom: 5px;
+                        }
+        
+                        input,
+                        textarea {
+                            width: 100%;
+                            padding: 10px;
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                            box-sizing: border-box;
+                        }
+        
+                        textarea {
+                            resize: vertical; 
+                            min-height: 120px; 
+                        }
+                    }
+        
+                    button {
+                        width: 20%; 
+                        padding: 10px;
+                        background-color: #4F5955; 
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        text-align: center;
+        
+                        &:hover {
+                            background-color: #b8a493;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.success-story{
+    background-color: #4F5955;
+    padding-top: 100px;
+
+    h6, h1{
+        color: #D9C3A9;
+    }
+    
+    h5, h2 {
+        color: white;
+    }
+
+
+
+.success-story-container {
+    background-image: url(/images/Dot\ map.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.success-content{
+    display: flex;
+    align-items: center;
+}
+
+.sucess-div-video {
+    .img {
+        margin-top: 200px;
+    }
+}
+
+}

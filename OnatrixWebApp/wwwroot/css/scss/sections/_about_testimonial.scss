@@ -1,0 +1,23 @@
+.about-testimonial{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F7F7F7;
+
+        .about-testimonial-text{
+            margin-left: 400px;
+            padding-right: 40px;
+
+            h5{
+                font-style: italic;
+                color: #D9C3A9 ;
+            }
+
+            h4{
+                font-weight: 300;
+                font-style: italic;
+            }
+
+        }
+
+}

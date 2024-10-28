@@ -1,0 +1,70 @@
+.recent-projects {
+    
+    .recent-projects-container {
+        margin-top: 80px;
+        margin-bottom: 20px;
+        
+        h6 {
+            color: #D9C3A9;
+        }
+    }
+
+    .row {
+        display: flex;
+        height: 480px;
+    }
+
+    .project-item {
+        position: relative; 
+        background-size: cover;
+        color: white;
+        //padding: 20px;
+        //margin-bottom: 30px;
+        text-align: center;
+        overflow: hidden;
+
+        :hover {
+            background-color: #4F5955;
+        }
+        h6 {
+            font-weight: normal; 
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 0; 
+            font-size: 0.9em; 
+            padding-bottom: 15px; 
+        }
+    
+        &.project1 {
+            background-image: url('/images/pj1.svg');
+        }
+
+        &.project2 {
+            background-image: url('/images/pj2.svg');
+        }
+
+        &.project3 {
+            background-image: url('/images/pj3.svg'); 
+        }
+
+        &.project4 {
+            background-image: url('/images/pj4.svg');
+        }
+
+        .hover-icon {
+            position: absolute; 
+            bottom: 20px;
+            right: 20px;
+            font-size: 24px;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s; 
+        }
+
+        &:hover .hover-icon {
+            opacity: 1; 
+        }
+    }
+}
