@@ -2,6 +2,8 @@
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
 @{
 	Layout = "mainLayout.cshtml";
+     <!-- ViewBag.Title = @Model?.Value("pageTitle") ?? null; -->
+
 	var heroImg = Model?.Value<IPublishedContent>("heroImage")?.Url() ?? "";
     var imgMainAbout = Model?.Value<IPublishedContent>("imgMainAbout")?.Url() ?? "";
     var imgOurServices21 = Model?.Value<IPublishedContent>("imgOurServices21")?.Url() ?? "";
