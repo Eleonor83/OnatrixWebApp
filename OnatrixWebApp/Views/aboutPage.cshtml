@@ -1,0 +1,156 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = "mainLayout.cshtml";
+
+    var imgAboutSa = Model?.Value<IPublishedContent>("imgAboutSa")?.Url() ?? "";
+    var imgAboutSTestimonial = Model?.Value<IPublishedContent>("imgAboutSTestimonial")?.Url() ?? "";
+    var imgAOTS1 = Model?.Value<IPublishedContent>("imgAOTS1")?.Url() ?? "";
+    var imgAOTS2 = Model?.Value<IPublishedContent>("imgAOTS2")?.Url() ?? "";
+    var imgAOTS3 = Model?.Value<IPublishedContent>("imgAOTS3")?.Url() ?? "";
+    var imgAOTS4 = Model?.Value<IPublishedContent>("imgAOTS4")?.Url() ?? "";
+    var imgAOTS5 = Model?.Value<IPublishedContent>("imgAOTS5")?.Url() ?? "";
+    var imgAOTS6 = Model?.Value<IPublishedContent>("imgAOTS6")?.Url() ?? "";
+    var imgAOTS7 = Model?.Value<IPublishedContent>("imgAOTS7")?.Url() ?? "";
+    var imgAboutContactInfo = Model?.Value<IPublishedContent>("imgAboutContactInfo")?.Url() ?? "";
+}
+
+        <main>
+            <section class="breadcrumb-section">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item first-breadcrumb">
+                        <a href="index.html">About Us</a>
+                      </li>
+                      <li class="breadcrumb-item second-line">
+                        <a href="services.html">Home</a>
+                      </li>
+                      <li class="breadcrumb-item active second-line" aria-current="page">About</li>
+                    </ol>
+                  </nav>
+            </section>
+
+            <section class="about-section-about">
+                <div class="container container-about-about">
+                    <div class="about-div-image">
+                        <img src="@imgAboutSa" alt="">
+                        <h5>@Model.Value("h5AboutSa")</h5>
+                    </div>
+                    <div class="about-div-text">
+                        <h4>@Model.Value("h4AboutSa")</h4>
+                        <p>@Model.Value("pAboutSA1")</p>
+                        <p>@Model.Value("pAboutSA2")</p>
+                        <p>@Model.Value("pAboutSA3")</p>
+                        <p>@Model.Value("pAboutSA4")</p>
+                        <p>@Model.Value("pAboutSA5")</p>
+                        <p>@Model.Value("pAboutSA6")</p>
+                        <p>@Model.Value("pAboutSA7")</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="about-testimonial">
+                    <div class="about-testimonial-text">
+                        <h5>@Model.Value("h5AboutSTestimonial")</h5>
+                        <h2>@Model.Value("h2AboutSTestimonial")</h2>
+                        <h4>@Model.Value("h4AboutSTestimonial")</h4>
+                        <p class="stars">@Model.Value("pAboutSTestimonialStars")
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p>@Model.Value("pAboutSTestimonialName")</p>
+                        <h4>@Model.Value("h4AboutSTestimonialBank")</h4>
+                    </div>
+                    <div class="about-testimonial-img">
+                        <img src="@imgAboutSTestimonial" alt="Kevin Gardner">
+                    </div>
+            </section>
+
+            <section class="about-our-team">
+                <div class="container container-about-our-team">
+                    <div class="row justify-content-center text-center about-ourteam-header">
+                        <h5>@Model.Value("h5AOTSHeader")</h5>
+                        <h2>@Model.Value("h2AOTSHeader")</h2>
+                    </div>
+                    <div class="row about-ourteam-img">
+                        <div class="our-team-img-div">
+                            <img src="@imgAOTS1" alt="Brandon Newton">
+                            <h4>@Model.Value("h4AOTS1")</h4>
+                            <p>@Model.Value("pAOTS1")</p>
+                        </div>
+                        <div class="our-team-img-div">
+                            <img src="@imgAOTS2" alt="AJ Carter">
+                            <h4>@Model.Value("h4AOTS2")</h4>
+                            <p>@Model.Value("pAboutSA2")</p>
+                        </div>
+                        <div class="our-team-img-div">
+                            <img src="@imgAOTS3" alt="Aaron Lambert">
+                            <h4>@Model.Value("h4AOTS3")</h4>
+                            <p>@Model.Value("pAOTS3")</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row about-ourteam-img">
+                            <div class="our-team-img-div">
+                                <img src="@imgAOTS4" alt="Tina Fox">
+                                <h4>@Model.Value("h4AOTS4")</h4>
+                                <p>@Model.Value("pAOTS4")</p>
+                            </div>
+                            <div class="our-team-img-div">
+                                <img src="@imgAOTS5" alt="Brandon Kerr">
+                                <h4>@Model.Value("h4AOTS5")</h4>
+                                <p>@Model.Value("pAOTS5")</p>
+                            </div>
+                            <div class="our-team-img-div">
+                                <img src="@imgAOTS6" alt="Miranda Dayton">
+                                <h4>@Model.Value("h4AOTS6")</h4>
+                                <p>@Model.Value("pAOTS6")</p>
+                            </div>
+                            <div class="our-team-img-div">
+                                <img src="@imgAOTS7" alt="Kevin Gardner">
+                                <h4>@Model.Value("h4AOTS7")</h4>
+                                <p>@Model.Value("pAOTS7")</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-contact-info">
+                <div class="container container-about-contact-info">
+                    <div class="about-contactinfo-img-div">
+                        <img src="@imgAboutContactInfo" alt="">
+                    </div>
+                    <div class="about-info-div">
+                        <h2>@Model.Value("h2AboutContactInfo")</h2>
+                        <div class="info-divs">
+                            <div class="info-div-content">
+                                <i class="fa-thin fa-location-dot"></i>
+                                <div class="about-info-text">
+                                    <p class="info-text-p"> @Model.Value("pAboutContactInfo1")</p>
+                                    <p class="info-text-p-2">@Model.Value("pAboutContactInfo2")</p>
+                                </div>
+                            </div>
+                            <div class="info-div-content">
+                                <i class="fa-light fa-phone-flip"></i>
+                                <div class="about-info-text">
+                                    <p class="info-text-p"> @Model.Value("pAboutContactInfo3")</p>
+                                    <p class="info-text-p-2">@Model.Value("pAboutContactInfo4")</p>
+                                </div>
+                            </div>
+                            <div class="info-div-content">
+                                <i class="fa-thin fa-envelope"></i>
+                                <div class="about-info-text">
+                                    <p class="info-text-p"></i> @Model.Value("pAboutContactInfo5")</p>
+                                    <p class="info-text-p-2">@Model.Value("pAboutContactInfo6")</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
